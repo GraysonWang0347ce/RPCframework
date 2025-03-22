@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package rpcheader;
+
+message RpcHeader{
+    bytes service_name = 1;
+    bytes meghod_name = 2;
+    uint32 args_size = 3;
+}
